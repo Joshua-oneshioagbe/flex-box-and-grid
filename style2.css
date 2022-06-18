@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+    
+    body{
+        background-color: #1a1c28;
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+    }
+    
+    .container{
+        display: grid;
+        margin: auto;
+        width: 50%;
+        height: 50%;
+        grid-gap: 10px;
+        grid-template-areas:  
+        "box-a box-a box-b"
+        "box-c box-d box-d"
+        "box-c box-e box-e"
+        ;
+        grid-template-columns: 1.5fr 0.6fr 0.8fr ;
+        grid-template-rows: 3fr 1.5fr 1.8fr ;
+        
+    }
+    
+    .box-a{
+        background-color: #eb5020;
+        grid-area: box-a;
+    }
+    
+    .box-b{
+        background-color: #ffa401;
+        grid-area: box-b;
+    }
+    
+    .box-c{
+        background-color: #05aa42;
+        grid-area: box-c;
+    }
+    
+    .box-d{
+        background-color: #01aefd;
+        grid-area: box-d;
+    }
+    
+    .box-e{
+        background-color: #01aefd;
+        grid-area: box-e;
+    }
